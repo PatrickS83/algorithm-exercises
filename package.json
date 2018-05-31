@@ -1,0 +1,31 @@
+{
+  "name": "algorithm-exercises",
+  "version": "1.0.0",
+  "description": "Various algorithm exercises to stay sharp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickS83/algorithm-exercises.git"
+  },
+  "author": "Patrick Schülke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrickS83/algorithm-exercises/issues"
+  },
+  "homepage": "https://github.com/PatrickS83/algorithm-exercises#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.8.2",
+    "prettier": "^1.13.3"
+  },
+  "dependencies": {}
+}
