@@ -15,13 +15,9 @@
 function cakes(recipe, available) {
   const recipeKeys = Object.keys(recipe);
   const availableKeys = Object.keys(available);
-  const filter = recipeKeys.filter(ingredient =>
-    availableKeys.includes(ingredient)
-  );
+  const filter = recipeKeys.filter(ingredient => availableKeys.includes(ingredient));
   if (filter.length !== recipeKeys.length) return 0;
 
-  const amount = recipeKeys.map(
-    ingredient => available[ingredient] / recipe[ingredient]
-  );
+  const amount = recipeKeys.map(ingredient => available[ingredient] / recipe[ingredient]);
   return Math.floor(Math.min(...amount));
 }
