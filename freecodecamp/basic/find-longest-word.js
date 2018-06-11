@@ -6,8 +6,9 @@
 function findLongestWordLength(str) {
   return str
     .split(' ')
-    .map(x => x.length)
-    .sort()[0];
+    .map(word => word.length)
+    .sort((a, b) => a - b)
+    .pop();
 }
 
 findLongestWordLength('The quick brown fox jumped over the lazy dog');
