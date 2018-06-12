@@ -18,19 +18,17 @@ function smallestCommons(arr) {
     let low = Math.min(num1, num2);
     let high = Math.max(num1, num2);
     while(true) {
-      let remainder = high % low
+      const remainder = high % low
       if(remainder === 0) return low
-      else {
-        high = low;
-        low = remainder
-      }
+      high = low;
+      low = remainder
     }
   }
 
   // calculating the scm || a * b / gcd(a, b)
   return numbers.reduce((acc, curr, i) => {
     if (i < numbers.length - 1) return acc * numbers[i+1] / gcd(acc, numbers[i+1])
-    else return acc
+    return acc
   }, numbers[0])
 }
 
